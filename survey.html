@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1 id="title">Hiring Form</h1>
+            <p id="description">Thank you for taking the time</p>
+        </div>
+
+        <form action="#" id="survey-form">
+
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span>(optional)</span></label>
+                <input type="number" id="number" placeholder="Age" min="10" max="99">
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown" id="drop">Which option best describes your current role?</label>
+                <select name="dropdown " id="dropdown">
+                    <option value="" id="first-option" selected disabled>Select current role</option>
+                    <option value="">React Developer</option>
+                    <option value="">Fullstack Developer</option>
+                    <option value="">Backend Developer</option>
+                    <option value="">Frontend Developer</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="radio">
+                <p id="friend">Would you recommend this hiring to friend?</p>
+                <label id="lab"><input type="radio" value="definitely" name="user-recommended" class="input-radio" checked>Definitely</label>
+                <label id="lab"><input type="radio" value="maybe" name="user-recommended" class="input-radio">May be</label>
+                <label id="lab"><input type="radio" value="definitely" name="user-recommended" class="input-radio">Not sure</label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="dropdown" id="lang">What is your favorite language?</label>
+                <select name="dropdown " id="dropdown">
+                    <option value="" id="first-option" selected disabled>Select an option</option>
+                    <option value="">C</option>
+                    <option value="">C++</option>
+                    <option value="">Java</option>
+                    <option value="">Python</option>
+                    <option value="">Javascript</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="edu">What is your qualification?<span>(Check all that apply)</span></p>
+                <label id="box"><input type="checkbox" value="bca" name="prefer" class="input-checkbox">BCA</label>
+                <label for=""id="box"><input type="checkbox" value="mca" name="prefer" class="input-checkbox">MCA</label>
+                <label for=""id="box"><input type="checkbox" value="btech" name="prefer" class="input-checkbox">B.tech</label>
+                <label for=""id="box"><input type="checkbox" value="mtech" name="prefer" class="input-checkbox">M.tech</label>
+            </div>
+            
+            <div class="form-group">
+                <p id="com">Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

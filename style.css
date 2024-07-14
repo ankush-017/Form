@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&family=Playwrite+HR+Lijeva:wght@100..400&family=Playwrite+HR:wght@100..400&family=Playwrite+PE:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&family=Playwrite+HR+Lijeva:wght@100..400&family=Playwrite+HR:wght@100..400&family=Playwrite+PE:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+body{
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    overflow-x: hidden;
+    color: white; 
+}
+body::before{
+  content: '';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image:linear-gradient(
+    115deg,
+    rgba(27, 95, 77, 0.8),
+    rgba(136, 136, 206, 0.7)
+  ), url(survey.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+@media (min-width: 575px) {
+    .wrapper {
+      max-width: 540px;
+    }
+  }
+
+@media (min-width: 768px) {
+    .wrapper {
+      max-width: 768px;
+    }
+}
+
+.head{
+  text-align: center;
+}
+.head h1{
+  font-family:  cursive;
+  font-size: 42px;
+  font-weight: 100px;
+  line-height: 0.5;
+}
+.head p{
+  font-family: "Playwrite HR Lijeva", cursive;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+form{
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(13, 84, 96);
+    padding: 40px;
+    border-radius: 10px;
+}
+#name-label{
+  font-size: 24px;
+}
+#email-label{
+  font-size: 24px;
+}
+#number-label{
+  font-size: 24px;
+}
+#number-label span{
+  font-size: 16px;
+  font-weight: lighter;
+}
+#drop{
+  font-size: 22px;
+}
+#friend{
+  font-size: 22px;
+}
+/* #radio label input{
+width: 22px;
+height: 22px;
+} */
+ #lab{
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+ }
+ #box{
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+ }
+.input-radio,.input-checkbox{
+  display: inline;
+  cursor: pointer;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+
+#lang{
+  font-size: 22px;
+}
+#edu{
+  font-size: 22px;
+}
+#edu span{
+  font-size: 15px;
+  font-weight: lighter;
+}
+#com{
+  font-size: 22px;
+}
+#comment{
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.form-group input{
+  margin-top: 7px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+#summit{
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgb(79, 129, 5);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.form-group select{
+  margin-top: 7px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
